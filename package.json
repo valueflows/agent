@@ -1,0 +1,31 @@
+{
+  "name": "holodex-vocab",
+  "version": "1.0.0",
+  "description": "semantic vocabulary definitions for holodex.is",
+  "main": "vocab/index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvocab/holodex.git"
+  },
+  "keywords": [
+    "holodex",
+    "linked",
+    "data",
+    "semantic",
+    "web",
+    "jsonld",
+    "json-schema"
+  ],
+  "author": "openvocab",
+  "license": "AGPLv3",
+  "bugs": {
+    "url": "https://github.com/openvocab/holodex/issues"
+  },
+  "homepage": "https://github.com/openvocab/holodex",
+  "devDependencies": {
+    "standard": "^3.5.0"
+  }
+}
