@@ -1,49 +1,55 @@
 module.exports = {
   allOf: [{
-    $ref: "Agent",
+    $ref: 'Agent'
   }, {
-    id: "Group",
-    type: 'object',
-    prefixes: {
-      "": "http://schema.org/",
-      "org": "http://www.w3.org/TR/vocab-org#",
-    },
-    context: "org:Organization",
-    description: "A collection of people and groups.",
+    id: 'Group',
+    collection: 'groups',
+    prefixes: require('./prefixes'),
+    context: 'schema:Organization',
+    description: 'A collection of agents with the power to act as one.',
     properties: {
       name: {
-        description: "The primary name of the group.",
+        description: 'The primary name of the group.'
       },
       description: {
-        description: "A short description of the group.",
+        description: 'A short description of the group.'
+      },
+      image: {
+        description: 'An avatar that represents the group.'
+      },
+      roles: {
+        description: 'The roles the group is in.'
       },
       relationships: {
-        description: "The relationships the group has or is with other agents.",
+        description: 'The relationships the group has with other agents.'
       },
       members: {
-        context: "member",
-        description: "The members of the group.",
-        type: "array",
+        context: 'schema:member',
+        description: 'The agents the group has as members.',
+        type: 'array',
         items: {
-          $ref: "Agent",
+          $ref: 'Agent'
         },
-        get: function () {
-          // from this Group's relationships
-          return this.relationships
-          // that have additionalType with name 'member',
-          .filter(function (rel) {
-            return rel.additionalType.name === "member"
-          })
-          // return object that is related (i.e. is member)
-          .map(function (m) {
-            return r.isRelated;
-          })
-          ;
-        },
-      },
-    },
-  }],
-};
-module.exports.dependencies = {
-  Agent: require('./Agent'),
-};
+        get: {
+          deps: ['@relationships'],
+          fn: function (myRelationships) {
+            // from this group's relationships
+            return myRelationships
+            // that have relationship type with name 'membership',
+            .filter(function (rel) {
+              return rel.type.name === 'membership'
+            })
+            // return agent in member role
+            .map(function (rel) {
+              return rel.roles.findOne({
+                name: {
+                  eq: 'member'
+                }
+              }).agent
+            })
+          }
+        }
+      }
+    }
+  }]
+}
