@@ -1,42 +1,42 @@
 module.exports = {
   id: 'RelationshipType',
-  collection: 'relationshipTypes',
   prefixes: require('./prefixes'),
   description: 'A type of relationship between multiple agents.',
-  context: 'hol:RelationshipType',
+  context: 'open:RelationshipType',
   properties: {
-    name: {
-      description: 'The name of the type of agent relationship.',
-      context: 'schema:name',
-      type: 'string'
-    },
-    pluralName: {
-      description: 'A plural name for the type of agent relationship.',
-      context: 'skos:altLabel',
-      type: 'string'
+    id: {
+      context: '@id',
+      description: 'The identifier of the type of agent relationship.',
+      type: 'string',
+      format: 'uri',
+      required: true
     },
     description: {
-      description: 'A description of the type of agent relationship.',
       context: 'schema:description',
+      description: 'A description of the type of agent relationship.',
       type: 'string'
     },
-    roleTypes: {
-      description: 'The types of roles within this relationship type.',
-      context: 'hol:roleType',
-      type: 'array',
-      items: {
-        $ref: 'RoleType'
-      },
-      get: {
-        deps: ['$roleTypes'],
-        fn: function (allRoleTypes) {
-          return allRoleTypes
-          .find({
-            path: ['relationshipType'],
-            eq: this.id
-          })
-        }
-      }
+    obverse: {
+      context: 'open:obverseRelationshipType',
+      description: "The relationship type's associated obverse, if any.",
+      $ref: 'RelationshipType'
+    },
+    source: {
+      context: 'open:sourceAgentType',
+      description: 'The type of source agent in the relationship',
+      $ref: 'AgentType',
+      required: true
+    },
+    target: {
+      context: 'open:targetAgentType',
+      description: 'The type of target agent in the relationship',
+      $ref: 'AgentType',
+      required: true
+    },
+    context: {
+      context: 'open:contextAgentType',
+      description: 'The type of context agent in the relationship',
+      $ref: 'AgentType'
     }
   }
 }

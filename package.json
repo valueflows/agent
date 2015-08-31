@@ -4,7 +4,8 @@
   "description": "semantic vocabulary definitions for holodex.is",
   "main": "vocab/index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "uml": "dot -T svg -o ./assets/uml.svg ./assets/uml.dot"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,6 @@
   },
   "homepage": "https://github.com/openvocab/holodex",
   "devDependencies": {
-    "standard": "^3.5.0"
+    "standard": "^5.1.1"
   }
 }
