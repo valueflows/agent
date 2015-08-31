@@ -1,37 +1,48 @@
 module.exports = {
   id: 'Relationship',
-  collection: 'relationships',
   prefixes: require('./prefixes'),
   description: 'A relationship between multiple agents.',
-  context: 'hol:Relationship',
+  context: 'open:Relationship',
   properties: {
-    type: {
+    id: {
+      context: '@id',
+      description: 'The identifier for the relationship.',
+      type: 'string',
+      format: 'uri',
+      required: true
+    },
+    relationshipType: {
+      context: 'open:relationshipType',
       description: 'The type of agent relationship.',
-      context: 'hol:relationshipType',
-      $ref: 'RelationshipType'
+      $ref: 'RelationshipType',
+      required: true
     },
     description: {
-      description: "A description of the agents' relations.",
       context: 'schema:description',
+      description: "A description of the agents' relations.",
       type: 'string'
     },
-    roles: {
-      description: 'The roles within this relationship.',
-      context: 'hol:relationshipRole',
-      type: 'array',
-      items: {
-        $ref: 'Role'
-      },
-      get: {
-        deps: ['$roles'],
-        fn: function (allRoles) {
-          return allRoles
-          .find({
-            path: ['relationship'],
-            eq: this.id
-          })
-        }
-      }
+    obverse: {
+      context: 'open:obverseRelationship',
+      description: "This relationship's associated obverse relationship, if any.",
+      $ref: 'Relationship'
+    },
+    source: {
+      context: 'open:sourceAgent',
+      description: 'The source agent in the relationship',
+      $ref: 'Agent',
+      required: true
+    },
+    target: {
+      context: 'open:targetAgent',
+      description: 'The target agent in the relationship',
+      $ref: 'Agent',
+      required: true
+    },
+    context: {
+      context: 'open:contextAgent',
+      description: 'The context agent in the relationship',
+      $ref: 'Agent'
     }
   }
 }
