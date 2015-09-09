@@ -30,7 +30,7 @@ digraph G {
   ]
 
   Relationship [
-    label = "{Relationship|+ id : url\l+ description : string\l}"
+    label = "{Relationship|+ id : url\l+ description : string\l+ start : date-time\l+ end : date-time\l}"
   ]
 
   edge [

@@ -43,6 +43,18 @@ module.exports = {
       context: 'open:contextAgent',
       description: 'The context agent in the relationship',
       $ref: 'Agent'
+    },
+    start: {
+      context: 'schema:startDate',
+      description: 'The start date of the relationship.',
+      type: 'string',
+      format: 'date-time'
+    },
+    end: {
+      context: 'schema:endDate',
+      description: 'The end date of the relationship.',
+      type: 'string',
+      format: 'date-time'
     }
   }
 }
