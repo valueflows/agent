@@ -37,6 +37,8 @@ Relationship:
   source: required Agent
   target: required Agent
   context: optional Agent
+  start: optional date-time
+  end: optional date-time
 ```
 
 ## Pictures!
