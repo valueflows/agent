@@ -25,8 +25,8 @@ RelationshipType:
   id: required url
   description: optional string
   reverse: optional RelationshipType
-  source: required AgentType
-  target: required AgentType
+  source: optional AgentType
+  target: optional AgentType
   context: optional AgentType
 
 Relationship:

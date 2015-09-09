@@ -54,7 +54,7 @@ digraph G {
   Relationship -> Agent
 
   edge [
-    headlabel = "1"
+    headlabel = "0..1"
     taillabel = "0..*"
   ]
 
@@ -66,9 +66,7 @@ digraph G {
     label = "targetAgentType"
   ]
   RelationshipType -> AgentType
-
   edge [
-    headlabel = "0..1"
     label = "contextAgentType"
   ]
   RelationshipType -> AgentType
