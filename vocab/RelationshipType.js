@@ -16,9 +16,9 @@ module.exports = {
       description: 'A description of the type of agent relationship.',
       type: 'string'
     },
-    obverse: {
-      context: 'open:obverseRelationshipType',
-      description: "The relationship type's associated obverse, if any.",
+    reverse: {
+      context: 'open:reverseRelationshipType',
+      description: "The relationship type's associated reverse, if any.",
       $ref: 'RelationshipType'
     },
     source: {
