@@ -46,14 +46,14 @@
 <g id="edge4" class="edge"><title>RelationshipType&#45;&gt;AgentType</title>
 <path fill="none" stroke="black" d="M260.285,-150.323C238.402,-142.116 217.159,-129.473 204.037,-110 196.19,-98.3537 200.449,-86.9351 209.864,-76.7931"/>
 <text text-anchor="middle" x="263.037" y="-98.8" font-family="Bitstream Vera Sans" font-size="14.00">sourceAgentType</text>
-<text text-anchor="middle" x="204.864" y="-80.5931" font-family="Bitstream Vera Sans" font-size="14.00">1</text>
+<text text-anchor="middle" x="195.864" y="-80.5931" font-family="Bitstream Vera Sans" font-size="14.00">0..1</text>
 <text text-anchor="middle" x="247.285" y="-154.123" font-family="Bitstream Vera Sans" font-size="14.00">0..*</text>
 </g>
 <!-- RelationshipType&#45;&gt;AgentType -->
 <g id="edge5" class="edge"><title>RelationshipType&#45;&gt;AgentType</title>
 <path fill="none" stroke="black" d="M336.224,-135.892C333.317,-122.831 328.82,-107.617 322.037,-95 318.629,-88.6602 314.367,-82.4382 309.788,-76.586"/>
 <text text-anchor="middle" x="386.037" y="-98.8" font-family="Bitstream Vera Sans" font-size="14.00">targetAgentType</text>
-<text text-anchor="middle" x="304.788" y="-80.386" font-family="Bitstream Vera Sans" font-size="14.00">1</text>
+<text text-anchor="middle" x="295.788" y="-80.386" font-family="Bitstream Vera Sans" font-size="14.00">0..1</text>
 <text text-anchor="middle" x="323.224" y="-124.692" font-family="Bitstream Vera Sans" font-size="14.00">0..*</text>
 </g>
 <!-- RelationshipType&#45;&gt;AgentType -->

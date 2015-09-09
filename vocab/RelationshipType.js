@@ -24,14 +24,12 @@ module.exports = {
     source: {
       context: 'open:sourceAgentType',
       description: 'The type of source agent in the relationship',
-      $ref: 'AgentType',
-      required: true
+      $ref: 'AgentType'
     },
     target: {
       context: 'open:targetAgentType',
       description: 'The type of target agent in the relationship',
-      $ref: 'AgentType',
-      required: true
+      $ref: 'AgentType'
     },
     context: {
       context: 'open:contextAgentType',
