@@ -22,9 +22,9 @@ module.exports = {
       description: "A description of the agents' relations.",
       type: 'string'
     },
-    obverse: {
-      context: 'open:obverseRelationship',
-      description: "This relationship's associated obverse relationship, if any.",
+    reverse: {
+      context: 'open:reverseRelationship',
+      description: "This relationship's associated reverse relationship, if any.",
       $ref: 'Relationship'
     },
     source: {
