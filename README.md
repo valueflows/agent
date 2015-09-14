@@ -12,12 +12,13 @@ Vocabulary to describe fractal networks of people and groups.
 ```yml
 AgentType:
   id: required url
+  subTypeOf: optional AgentType
   name: optional string
   description: optional string
 
 Agent:
   id: required url
-  type: required AgentType
+  type: required AgentType(s)
   name: optional string
   image: optional url
 
