@@ -82,7 +82,14 @@ digraph G {
   Relationship -> RelationshipType
 
   edge [
-    label = "agentType"
+    headlabel = "0..1"
+    taillabel = "0..1"
+    label = "subTypeOf"
+  ]
+  AgentType -> AgentType
+
+  edge [
+    label = "type"
   ]
   Agent -> AgentType
 

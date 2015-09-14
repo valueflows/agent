@@ -2,7 +2,7 @@ module.exports = {
   id: 'Agent',
   prefixes: require('./prefixes'),
   description: 'An actor with agency.',
-  context: 'open:Agent',
+  context: 'foaf:Agent',
   properties: {
     id: {
       context: '@id',
@@ -11,10 +11,17 @@ module.exports = {
       format: 'uri',
       required: true
     },
-    agentType: {
-      context: 'open:agentType',
+    type: {
+      context: '@type',
       description: 'The type of agent.',
-      $ref: 'AgentType',
+      oneOf: [{
+        type: 'array',
+        items: {
+          $ref: 'AgentType'
+        }
+      }, {
+        $ref: 'AgentType'
+      }],
       required: true
     },
     name: {
