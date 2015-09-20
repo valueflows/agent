@@ -2,7 +2,7 @@ module.exports = {
   id: 'Relationship',
   prefixes: require('./prefixes'),
   description: 'A relationship between multiple agents.',
-  context: 'open:Relationship',
+  context: 'as:Relationship',
   properties: {
     id: {
       context: '@id',
@@ -12,7 +12,7 @@ module.exports = {
       required: true
     },
     relationshipType: {
-      context: 'open:relationshipType',
+      context: 'as:relationship',
       description: 'The type of agent relationship.',
       $ref: 'RelationshipType',
       required: true
@@ -28,31 +28,31 @@ module.exports = {
       $ref: 'Relationship'
     },
     source: {
-      context: 'open:sourceAgent',
+      context: 'as:subject',
       description: 'The source agent in the relationship',
       $ref: 'Agent',
       required: true
     },
     target: {
-      context: 'open:targetAgent',
+      context: 'as:object',
       description: 'The target agent in the relationship',
       $ref: 'Agent',
       required: true
     },
     context: {
-      context: 'open:contextAgent',
+      context: 'as:context',
       description: 'The context agent in the relationship',
       $ref: 'Agent'
     },
     start: {
-      context: 'schema:startDate',
-      description: 'The start date of the relationship.',
+      context: 'as:startTime',
+      description: 'The start time of the relationship.',
       type: 'string',
       format: 'date-time'
     },
     end: {
-      context: 'schema:endDate',
-      description: 'The end date of the relationship.',
+      context: 'as:endTime',
+      description: 'The end time of the relationship.',
       type: 'string',
       format: 'date-time'
     }

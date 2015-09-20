@@ -32,7 +32,7 @@ RelationshipType:
 
 Relationship:
   id: required url
-  type: required RelationshipType
+  relationshipType: required RelationshipType
   description: optional string
   inverse: optional Relationship
   source: required Agent

@@ -2,7 +2,7 @@ module.exports = {
   id: 'RelationshipType',
   prefixes: require('./prefixes'),
   description: 'A type of relationship between multiple agents.',
-  context: 'open:RelationshipType',
+  context: 'rdf:Property',
   properties: {
     id: {
       context: '@id',
