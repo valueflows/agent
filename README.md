@@ -18,23 +18,23 @@ AgentType:
 
 Agent:
   id: required url
-  type: required AgentType(s)
+  agentType: required AgentType(s)
   name: optional string
   image: optional url
 
 RelationshipType:
   id: required url
   description: optional string
-  reverse: optional RelationshipType
+  inverse: optional RelationshipType
   source: optional AgentType
   target: optional AgentType
   context: optional AgentType
 
 Relationship:
   id: required url
-  type: required RelationshipType
+  relationshipType: required RelationshipType
   description: optional string
-  reverse: optional Relationship
+  inverse: optional Relationship
   source: required Agent
   target: required Agent
   context: optional Agent

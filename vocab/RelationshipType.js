@@ -2,7 +2,7 @@ module.exports = {
   id: 'RelationshipType',
   prefixes: require('./prefixes'),
   description: 'A type of relationship between multiple agents.',
-  context: 'open:RelationshipType',
+  context: 'rdf:Property',
   properties: {
     id: {
       context: '@id',
@@ -16,8 +16,8 @@ module.exports = {
       description: 'A description of the type of agent relationship.',
       type: 'string'
     },
-    reverse: {
-      context: 'open:reverseRelationshipType',
+    inverse: {
+      context: 'owl:inverseOf',
       description: "The relationship type's associated reverse, if any.",
       $ref: 'RelationshipType'
     },

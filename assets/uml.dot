@@ -89,7 +89,7 @@ digraph G {
   AgentType -> AgentType
 
   edge [
-    label = "type"
+    label = "agentType"
   ]
   Agent -> AgentType
 
@@ -99,12 +99,12 @@ digraph G {
   ]
   
   edge [
-    label = "reverseRelationshipType"
+    label = "inverseRelationshipType"
   ]
   RelationshipType -> RelationshipType
 
   edge [
-    label = "reverseRelationship"
+    label = "inverseRelationship"
   ]
   Relationship -> Relationship
 }

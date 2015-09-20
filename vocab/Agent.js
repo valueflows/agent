@@ -11,7 +11,7 @@ module.exports = {
       format: 'uri',
       required: true
     },
-    type: {
+    agentType: {
       context: '@type',
       description: 'The type of agent.',
       oneOf: [{
