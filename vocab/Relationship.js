@@ -22,8 +22,8 @@ module.exports = {
       description: "A description of the agents' relations.",
       type: 'string'
     },
-    reverse: {
-      context: 'open:reverseRelationship',
+    inverse: {
+      context: 'owl:inverseOf',
       description: "This relationship's associated reverse relationship, if any.",
       $ref: 'Relationship'
     },

@@ -99,12 +99,12 @@ digraph G {
   ]
   
   edge [
-    label = "reverseRelationshipType"
+    label = "inverseRelationshipType"
   ]
   RelationshipType -> RelationshipType
 
   edge [
-    label = "reverseRelationship"
+    label = "inverseRelationship"
   ]
   Relationship -> Relationship
 }
