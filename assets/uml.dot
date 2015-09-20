@@ -89,7 +89,7 @@ digraph G {
   AgentType -> AgentType
 
   edge [
-    label = "type"
+    label = "agentType"
   ]
   Agent -> AgentType
 

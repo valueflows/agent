@@ -18,7 +18,7 @@ AgentType:
 
 Agent:
   id: required url
-  type: required AgentType(s)
+  agentType: required AgentType(s)
   name: optional string
   image: optional url
 
