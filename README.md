@@ -42,6 +42,14 @@ Relationship:
   end: optional date-time
 ```
 
+## Examples
+
+All examples open in [JSON-LD Playground](http://json-ld.org/playground)
+and use context and example files from master branch of this repository.
+
+* [elf
+  Pavlik](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fopenvocab%2Fagent%2Fmaster%2Fexamples%2Felf-pavlik.jsonld&context=https%3A%2F%2Frawgit.com%2Fopenvocab%2Fagent%2Fmaster%2Fcontext.jsonld)
+
 ## Pictures!
 
 [![UML class diagram](https://rawgit.com/openvocab/agent/master/assets/uml.svg)](https://en.wikipedia.org/wiki/Class_diagram)

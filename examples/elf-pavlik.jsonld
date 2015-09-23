@@ -1,0 +1,6 @@
+{
+  "@context": "https://rawgit.com/openvocab/agent/master/context.jsonld",
+  "@id": "https://wwelves.org/perpetual-tripper",
+  "@type": "Person",
+  "name": "elf Pavlik"
+}
