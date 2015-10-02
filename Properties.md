@@ -28,7 +28,6 @@ This agent has been trained and certified to use this resource.
 
 This group of people owns the printer until their contributions are paid back.
 
-After that, the Commons will own it, and Sensorica will be the custodian on behalf of the Commons.
 * Owner : Thi 
 * Owner : Daniel 
 * Owner : Lynn 
@@ -40,6 +39,9 @@ After that, the Commons will own it, and Sensorica will be the custodian on beha
 * Owner : Tyler 
 * Owner : Frederic 
 * Owner : Ilian 
+ 
+After that, the Commons will own it, and Sensorica will be the custodian on behalf of the Commons.
+
 * Custodian: Sensorica
 * Manager : Daniel
 * Manager : Tibi 
