@@ -25,23 +25,25 @@ This agent certifies that other people have demonstrated their competence in usi
 This agent has been trained and certified to use this resource.
 
 ### Example: Sensorica's community-funded 3D printer
+
 This group of people owns the printer until their contributions are paid back.
+
 After that, the Commons will own it, and Sensorica will be the custodian on behalf of the Commons.
-Owner : Thi 
-Owner : Daniel 
-Owner : Lynn 
-Owner : Tibi 
-Owner : Maria 
-Owner : Mario 
-Owner : Jean-Francois 
-Owner : Marisa 
-Owner : Tyler 
-Owner : Frederic 
-Owner : Ilian 
-Custodian: Sensorica
-Manager : Daniel
-Manager : Tibi 
-Trainer : Daniel
-Certifier : Daniel
-Technician : Daniel 
+* Owner : Thi 
+* Owner : Daniel 
+* Owner : Lynn 
+* Owner : Tibi 
+* Owner : Maria 
+* Owner : Mario 
+* Owner : Jean-Francois 
+* Owner : Marisa 
+* Owner : Tyler 
+* Owner : Frederic 
+* Owner : Ilian 
+* Custodian: Sensorica
+* Manager : Daniel
+* Manager : Tibi 
+* Trainer : Daniel
+* Certifier : Daniel
+* Technician : Daniel 
 
