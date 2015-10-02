@@ -1,7 +1,7 @@
 ## Resource <-> Agent
 
-domain: Resource (its instance acts as subject of a Statement)
-range: Agent (its instance acts as object of a Statement)
+* domain: Resource (its instance acts as subject of a Statement)
+* range: Agent (its instance acts as object of a Statement)
 
 ### owner
 This agent owns all rights to this resource.
