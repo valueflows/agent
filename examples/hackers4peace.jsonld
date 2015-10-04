@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rawgit.com/openvocab/agent/master/context.jsonld",
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
     {
       "h4pid": "https://graph.hackers4peace.net/"
     }

@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rawgit.com/openvocab/agent/master/context.jsonld",
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
     {
       "weid": "https://graph.wwelves.org/",
       "weurl": "https://wwelves.org/"
