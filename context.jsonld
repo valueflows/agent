@@ -1,23 +1,10 @@
 {
   "@context": {
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "schema": "http://schema.org/",
-    "as": "http://www.w3.org/ns/activitystreams#",
-    "foaf": "http://xmlns.com/foaf/0.1/",
-    "Agent": "foaf:Agent",
-    "Person": "foaf:Person",
-    "Group": "foaf:Group",
-    "Relationship": "as:Relationship",
-    "name": "schema:name",
-    "description": "schema:description",
-    "image": "schema:image",
-    "subject": "as:subject",
-    "object": "as:object",
-    "context": "as:context",
-    "relationship": "as:relationship",
-    "startTime": "as:startTime",
-    "endTime": "as:endTime"
+    "vf": "https://w3id.org/valueflows/",
+    "Person": "vf:Person",
+    "Group": "vf:Group",
+    "url":  { "@id": "vf:url", "@type": "@id" },
+    "image": { "@id": "vf:image", "@type": "@id" },
+    "name": "vf:name"
   }
 }

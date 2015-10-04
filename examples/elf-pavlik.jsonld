@@ -1,6 +1,14 @@
 {
-  "@context": "https://rawgit.com/openvocab/agent/master/context.jsonld",
-  "@id": "https://wwelves.org/perpetual-tripper",
+  "@context": [
+    "https://rawgit.com/openvocab/agent/master/context.jsonld",
+    {
+      "weid": "https://graph.wwelves.org/",
+      "weurl": "https://wwelves.org/"
+    }
+  ],
+  "@id": "weid:ef093385-8906-4c78-9a69-9217c76013a8",
+  "url": "weurl:perpetual-tripper",
   "@type": "Person",
-  "name": "elf Pavlik"
+  "name": "elf Pavlik",
+  "image": "https://wwelves.org/images/elf-pavlik.jpg"
 }
