@@ -1,47 +1,16 @@
-# Agent vocab
+# vf:Agent
 
-Vocabulary to describe fractal networks of people and groups.
+Vocabulary to describe networks of people and groups.
 
-- [Agent](./vocab/Agent.js)
-- [AgentType](./vocab/AgentType.js)
-- [RelationshipType](./vocab/RelationshipType.js)
-- [Relationship](./vocab/Relationship.js)
+## Examples
 
-## Abstract
+All examples open in [JSON-LD Playground](http://json-ld.org/playground)
+and use context and example files from master branch of this repository.
 
-```yml
-AgentType:
-  id: required url
-  subTypeOf: optional AgentType
-  name: optional string
-  description: optional string
+### Person
 
-Agent:
-  id: required url
-  agentType: required AgentType(s)
-  name: optional string
-  image: optional url
+* [elf Pavlik](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Felf-pavlik.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Felf-pavlik.jsonld)
 
-RelationshipType:
-  id: required url
-  description: optional string
-  inverse: optional RelationshipType
-  source: optional AgentType
-  target: optional AgentType
-  context: optional AgentType
+### Group
 
-Relationship:
-  id: required url
-  relationshipType: required RelationshipType
-  description: optional string
-  inverse: optional Relationship
-  source: required Agent
-  target: required Agent
-  context: optional Agent
-  start: optional date-time
-  end: optional date-time
-```
-
-## Pictures!
-
-[![UML class diagram](https://rawgit.com/openvocab/agent/master/assets/uml.svg)](https://en.wikipedia.org/wiki/Class_diagram)
+* [hackers4peace](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fhackers4peace.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fhackers4peace.jsonld)

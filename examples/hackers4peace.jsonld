@@ -1,0 +1,13 @@
+{
+  "@context": [
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    {
+      "h4pid": "https://graph.hackers4peace.net/"
+    }
+  ],
+  "@id": "h4pid:7e888eed-611c-49c1-a264-fd6fe9182196",
+  "url": "https://hackers4peace.net/",
+  "@type": "Group",
+  "name": "hackers4peace",
+  "image": "https://pbs.twimg.com/profile_images/2482021874/c352httwpbi4vl3n42za.png"
+}

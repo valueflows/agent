@@ -1,27 +1,10 @@
 {
-  "open": "http://openvocab.is/#",
-  "schema": "http://schema.org/",
-  "as": "http://www.w3.org/ns/activitystreams#",
-  "foaf": "http://xmlns.com/foaf/0.1/",
-  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-  "owl": "http://www.w3.org/2002/07/owl#",
-  "AgentType": "rdfs:Class",
-  "id": "@id",
-  "type": "@type",
-  "subTypeOf": "rdfs:subClassOf",
-  "name": "schema:name",
-  "description": "schema:description",
-  "Agent": "foaf:Agent",
-  "agentType": "@type",
-  "image": "schema:image",
-  "RelationshipType": "rdf:Property",
-  "inverse": "owl:inverseOf",
-  "source": "as:subject",
-  "target": "as:object",
-  "context": "as:context",
-  "Relationship": "as:Relationship",
-  "relationshipType": "as:relationship",
-  "start": "as:startTime",
-  "end": "as:endTime"
+  "@context": {
+    "vf": "https://w3id.org/valueflows/",
+    "Person": "vf:Person",
+    "Group": "vf:Group",
+    "url":  { "@id": "vf:url", "@type": "@id" },
+    "image": { "@id": "vf:image", "@type": "@id" },
+    "name": "vf:name"
+  }
 }
