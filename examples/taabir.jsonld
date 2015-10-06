@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    {
+      "h4pid": "https://graph.hackers4peace.net/"
+    }
+  ],
+  "@id": "h4pid:a7df9305-e5c1-4172-bcf0-5589a26045bf",
+  "url": [
+    "http://www.taabir.net/",
+    "https://www.youtube.com/user/taabirassociation"
+  ],
+  "@type": "Group",
+  "displayName": "(Taabir) تعبير",
+  "displayNameMap": {
+    "en": "Taabir",
+    "ar": "تعبير"
+  }
+}

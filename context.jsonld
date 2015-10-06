@@ -5,6 +5,7 @@
     "Group": "vf:Group",
     "url":  { "@id": "vf:url", "@type": "@id" },
     "image": { "@id": "vf:image", "@type": "@id" },
-    "name": "vf:name"
+    "displayName": "vf:displayName",
+    "displayNameMap": { "@id": "displayName", "@container": "@language" }
   }
 }
