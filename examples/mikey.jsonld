@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "https://rawgit.com/valueflows/agent/master/context.jsonld"
+  ],
+  "@id": "http://dinosaur.is#i",
+  "@type": "Person",
+  "url": "http://dinosaur.is",
+  "displayName": "Mikey Williams",
+  "image": "https://gravatar.com/avatar/22ee24b84d0a2a9446fc9c0fe0652c46"
+}

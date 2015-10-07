@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "https://rawgit.com/valueflows/agent/master/context.jsonld"
+  ],
+  "@id": "http://craftworks.enspiral.com#us",
+  "@type": "Group",
+  "url": "http://craftworks.enspiral.com",
+  "displayName": "Enspiral Craftworks",
+  "image": "http://i.imgur.com/ErXtiQw.png"
+}
