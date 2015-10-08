@@ -67,7 +67,7 @@ An Agent is an entity that has agency in the economic realm.  This could be a pe
 * [Enspiral Craftworks](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fcraftworks.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fcraftworks.jsonld)
 
 ##### Misc
-* [Bob and Lynn](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fbobandlynn.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fbobandlynn.jsonld)
+* [Bob and Lynn, with relationships to Sensorica and Mikorizal](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fbobandlynn.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fbobandlynn.jsonld)
 
 ### Relationship
 
