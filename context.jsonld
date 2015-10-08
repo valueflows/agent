@@ -5,6 +5,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rdfs:label": { "@container": "@language" },
+    "Agent": "vf:Agent",
     "Person": "vf:Person",
     "Group": "vf:Group",
     "url":  { "@id": "vf:url", "@type": "@id" },
@@ -12,9 +13,86 @@
     "displayName": "vf:displayName",
     "displayNameMap": { "@id": "displayName", "@container": "@language" },
     "Relationship": "vf:Relationship",
-    "context": "vf:context",
     "object": "vf:object",
     "relationship": "vf:relationship",
     "subject": "vf:subject"
-  }
+  },
+  "@graph": [
+    {
+        "@id": "Agent",
+        "@type": "owl:Class",
+        "rdfs:label": {
+            "en": "Agent"
+        }
+    },
+    {
+        "@id": "Person",
+        "@type": "owl:Class",
+        "rdfs:label": {
+            "en": "Person"
+        },
+        "rdfs:subClassOf": {
+            "@id": "Agent"
+        }
+    },
+    {
+        "@id": "Group",
+        "@type": "owl:Class",
+        "rdfs:label": {
+            "en": "Group"
+        },
+        "rdfs:subClassOf": {
+            "@id": "Agent"
+        }
+    },
+    {
+        "@id": "Relationship",
+        "@type": "owl:Class",
+        "rdfs:label": {
+            "en": "Relationship"
+        }
+    },
+    {
+        "@id": "url",
+        "@type": "owl:DataProperty",
+        "rdfs:label": {
+            "en": "url"
+        }
+    },
+    {
+        "@id": "image",
+        "@type": "owl:ObjectProperty",
+        "rdfs:label": {
+            "en": "url"
+        }
+    },
+    {
+        "@id": "displayName",
+        "@type": "owl:DataProperty",
+        "rdfs:label": {
+            "en": "displayName"
+        }
+    },
+    {
+        "@id": "subject",
+        "@type": "owl:ObjectProperty",
+        "rdfs:label": {
+            "en": "subject"
+        }
+    },
+    {
+        "@id": "relationship",
+        "@type": "owl:ObjectProperty",
+        "rdfs:label": {
+            "en": "relationship"
+        }
+    },
+    {
+        "@id": "object",
+        "@type": "owl:ObjectProperty",
+        "rdfs:label": {
+            "en": "object"
+        }
+    }
+  ]
 }
