@@ -1,0 +1,140 @@
+{
+    "@context": {
+        "vf": "https://w3id.org/valueflows/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdfs:label": {
+            "@container": "@language"
+        },
+        "Group": "vf:Group",
+        "Person": "vf:Person",
+        "Relationship": "vf:Relationship",
+        "context": "vf:context",
+        "displayName": "vf:displayName",
+        "displayNameMap": { "@id": "displayName", "@container": "@language" },
+        "object": "vf:object",
+        "relationship": "vf:relationship",
+        "subject": "vf:subject"
+    },
+    "@graph": [
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-type/Network",
+            "@type": "owl:Class",
+            "rdfs:label": {
+                "en": "Network"
+            },
+            "rdfs:subClassOf": {
+                "@id": "Group"
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/affiliate",
+            "@type": "rdf:Property",
+            "rdfs:label": {
+                "en": "is affiliate of"
+            },
+            "owl:inverseOf": {
+                "rdfs:label": {
+                    "en": "has affiliate"
+                }
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/member",
+            "@type": "rdf:Property",
+            "rdfs:label": {
+                "en": "is member of"
+            },
+            "owl:inverseOf": {
+                "rdfs:label": {
+                    "en": "has member"
+                }
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/child",
+            "@type": "rdf:Property",
+            "rdfs:label": {
+                "en": "is child of"
+            },
+            "owl:inverseOf": {
+                "rdfs:label": {
+                    "en": "has child"
+                }
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent/1",
+            "@type": "Person",
+            "displayName": "Bob Haugen"
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent/8",
+            "@type": "http://nrp.webfactional.com/accounting/agent-type/Network",
+            "displayName": "Sensorica"
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent/6",
+            "@type": "Person",
+            "displayName": "Lynn Foster"
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent/7",
+            "@type": "Group",
+            "displayName": "Mikorizal Software"
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship/3/",
+            "@type": "Relationship",
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/8/"
+            },
+            "relationship": {
+                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/affiliate"
+            },
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/1/"
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship/2/",
+            "@type": "Relationship",
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/7/"
+            },
+            "relationship": {
+                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/member"
+            },
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/6/"
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship/4/",
+            "@type": "Relationship",
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/8/"
+            },
+            "relationship": {
+                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/affiliate"
+            },
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/6/"
+            }
+        },
+        {
+            "@id": "http://nrp.webfactional.com/accounting/agent-relationship/1/",
+            "@type": "Relationship",
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/7/"
+            },
+            "relationship": {
+                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/member"
+            },
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/1/"
+            }
+        }
+    ]
+}
