@@ -46,8 +46,8 @@ An Agent is an entity that has agency in the economic realm.  This could be a pe
 
 #### Properties
 
-* @id
-* type
+* @id ([JSON-LD](http://www.w3.org/TR/json-ld/) specific way of setting [rdf:subject](http://www.w3.org/TR/rdf-schema/#ch_subject))
+* @type ([JSON-LD](http://www.w3.org/TR/json-ld/) specific alias of [rdf:type](http://www.w3.org/TR/rdf-schema/#ch_type))
 * url 
 * displayName / displayNameMap
 * image
