@@ -4,7 +4,7 @@ Vocabulary to describe networks of people and groups.
 
 ## Vocabulary
 
-![agentpic](https://github.com/valueflows/agent/tree/master/assets/agent.png)
+![agentpic](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent.png)
 
 Notes: 
 * This vocabulary is very much in process, as is this documentation. 
@@ -28,6 +28,8 @@ The Relationship Type is implemented as a rdf:Property.  There are a number of u
 
 #### Properties
 
+Comonly used, recommended or defined by this vocabulary. Everyone can use any other properties from any other vocab unless they explicitly restrict their use.
+
 These properties are grouped with the rdf:Property that names the relationship type.
 
 * label (rdfs:label)
@@ -44,10 +46,10 @@ An Agent is an entity that has agency in the economic realm.  This could be a pe
 
 #### Properties
 
-* id
+* @id
 * type
-* displayName
-* url
+* url 
+* displayName / displayNameMap
 * image
 * (will be others)
 
@@ -63,6 +65,9 @@ An Agent is an entity that has agency in the economic realm.  This could be a pe
 * [hackers4peace](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fhackers4peace.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fhackers4peace.jsonld)
 * [Taabir](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Ftaabir.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Ftaabir.jsonld)
 * [Enspiral Craftworks](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fcraftworks.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fcraftworks.jsonld)
+
+##### Misc
+* [Bob and Lynn](http://json-ld.org/playground/#startTab=tab-compacted&json-ld=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fbobandlynn.jsonld&context=https%3A%2F%2Frawgit.com%2Fvalueflows%2Fagent%2Fmaster%2Fexamples%2Fbobandlynn.jsonld)
 
 ### Relationship
 
