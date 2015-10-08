@@ -42,53 +42,53 @@
         {
             "@id": "http://nrp.webfactional.com/accounting/agent-relationship/3/",
             "@type": "Relationship",
-            "object": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/8/"
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/1/"
             },
             "relationship": {
                 "@id": "member"
             },
-            "subject": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/1/"
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/8/"
             }
         },
         {
             "@id": "http://nrp.webfactional.com/accounting/agent-relationship/2/",
             "@type": "Relationship",
-            "object": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/7/"
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/6/"
             },
             "relationship": {
                 "@id": "member"
             },
-            "subject": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/6/"
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/7/"
             }
         },
         {
             "@id": "http://nrp.webfactional.com/accounting/agent-relationship/4/",
             "@type": "Relationship",
-            "object": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/8/"
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/6/"
             },
             "relationship": {
                 "@id": "member"
             },
-            "subject": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/6/"
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/8/"
             }
         },
         {
             "@id": "http://nrp.webfactional.com/accounting/agent-relationship/1/",
             "@type": "Relationship",
-            "object": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/7/"
+            "subject": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/1/"
             },
             "relationship": {
                 "@id": "member"
             },
-            "subject": {
-                "@id": "http://nrp.webfactional.com/accounting/agent/1/"
+            "object": {
+                "@id": "http://nrp.webfactional.com/accounting/agent/7/"
             }
         }
     ]
