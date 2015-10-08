@@ -15,55 +15,10 @@
         "displayNameMap": { "@id": "displayName", "@container": "@language" },
         "object": "vf:object",
         "relationship": "vf:relationship",
-        "subject": "vf:subject"
+        "subject": "vf:subject",
+        "member": "vf:member"
     },
     "@graph": [
-        {
-            "@id": "http://nrp.webfactional.com/accounting/agent-type/Network",
-            "@type": "owl:Class",
-            "rdfs:label": {
-                "en": "Network"
-            },
-            "rdfs:subClassOf": {
-                "@id": "Group"
-            }
-        },
-        {
-            "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/affiliate",
-            "@type": "rdf:Property",
-            "rdfs:label": {
-                "en": "is affiliate of"
-            },
-            "owl:inverseOf": {
-                "rdfs:label": {
-                    "en": "has affiliate"
-                }
-            }
-        },
-        {
-            "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/member",
-            "@type": "rdf:Property",
-            "rdfs:label": {
-                "en": "is member of"
-            },
-            "owl:inverseOf": {
-                "rdfs:label": {
-                    "en": "has member"
-                }
-            }
-        },
-        {
-            "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/child",
-            "@type": "rdf:Property",
-            "rdfs:label": {
-                "en": "is child of"
-            },
-            "owl:inverseOf": {
-                "rdfs:label": {
-                    "en": "has child"
-                }
-            }
-        },
         {
             "@id": "http://nrp.webfactional.com/accounting/agent/1",
             "@type": "Person",
@@ -71,7 +26,7 @@
         },
         {
             "@id": "http://nrp.webfactional.com/accounting/agent/8",
-            "@type": "http://nrp.webfactional.com/accounting/agent-type/Network",
+            "@type": "Group",
             "displayName": "Sensorica"
         },
         {
@@ -91,7 +46,7 @@
                 "@id": "http://nrp.webfactional.com/accounting/agent/8/"
             },
             "relationship": {
-                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/affiliate"
+                "@id": "member"
             },
             "subject": {
                 "@id": "http://nrp.webfactional.com/accounting/agent/1/"
@@ -104,7 +59,7 @@
                 "@id": "http://nrp.webfactional.com/accounting/agent/7/"
             },
             "relationship": {
-                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/member"
+                "@id": "member"
             },
             "subject": {
                 "@id": "http://nrp.webfactional.com/accounting/agent/6/"
@@ -117,7 +72,7 @@
                 "@id": "http://nrp.webfactional.com/accounting/agent/8/"
             },
             "relationship": {
-                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/affiliate"
+                "@id": "member"
             },
             "subject": {
                 "@id": "http://nrp.webfactional.com/accounting/agent/6/"
@@ -130,7 +85,7 @@
                 "@id": "http://nrp.webfactional.com/accounting/agent/7/"
             },
             "relationship": {
-                "@id": "http://nrp.webfactional.com/accounting/agent-relationship-type/member"
+                "@id": "member"
             },
             "subject": {
                 "@id": "http://nrp.webfactional.com/accounting/agent/1/"
