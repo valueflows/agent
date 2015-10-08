@@ -10,5 +10,10 @@
   "url": "weurl:perpetual-tripper",
   "@type": "Person",
   "displayName": "elf Pavlik",
-  "image": "https://wwelves.org/images/elf-pavlik.jpg"
+  "image": "https://wwelves.org/images/elf-pavlik.jpg",
+  "@reverse": {
+    "member": [
+      "https://graph.hackers4peace.net/7e888eed-611c-49c1-a264-fd6fe9182196"
+    ]
+  }
 }

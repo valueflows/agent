@@ -9,5 +9,8 @@
   "url": "https://hackers4peace.net/",
   "@type": "Group",
   "displayName": "hackers4peace",
-  "image": "https://pbs.twimg.com/profile_images/2482021874/c352httwpbi4vl3n42za.png"
+  "image": "https://pbs.twimg.com/profile_images/2482021874/c352httwpbi4vl3n42za.png",
+  "member": [
+    "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8"
+  ]
 }
