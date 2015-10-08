@@ -13,9 +13,10 @@
     "displayName": "vf:displayName",
     "displayNameMap": { "@id": "displayName", "@container": "@language" },
     "Relationship": "vf:Relationship",
-    "object": "vf:object",
-    "relationship": "vf:relationship",
-    "subject": "vf:subject"
+    "subject": { "@id": "vf:subject", "@type": "@id" },
+    "object": { "@id": "vf:object", "@type": "@id" },
+    "relationship": { "@id": "vf:relationship", "@type": "@id" },
+    "member": { "@id": "vf:member", "@type": "@id" }
   },
   "@graph": [
     {
@@ -92,6 +93,18 @@
         "@type": "owl:ObjectProperty",
         "rdfs:label": {
             "en": "object"
+        }
+    },
+    {
+        "@id": "member",
+        "@type": "owl:ObjectProperty",
+        "rdfs:label": {
+            "en": "member"
+        },
+        "owl:inverseOf": {
+            "rdfs:label": {
+                "en": "member of"
+            }
         }
     }
   ]
