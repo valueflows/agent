@@ -33,7 +33,7 @@ Comonly used, recommended or defined by this vocabulary. Everyone can use any ot
 These properties are grouped with the rdf:Property that names the relationship type.
 
 * label (rdfs:label)
-* inverse label (owl:inverseOf rdfs:label)
+* inverseOf (owl:inverseOf)
 * (need to add the source, target, context types.....)
 
 #### Examples
