@@ -1,8 +1,11 @@
 {
   "@context": [
-    "https://rawgit.com/valueflows/agent/master/context.jsonld"
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    {
+      "dex": "https://holodex.enspiral.com/api/"
+    }
   ],
-  "@id": "http://craftworks.enspiral.com#us",
+  "@id": "dex:groups/enspiral-craftworks",
   "@type": "Group",
   "url": "http://craftworks.enspiral.com",
   "displayName": "Enspiral Craftworks",
