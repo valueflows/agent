@@ -1,8 +1,11 @@
 {
   "@context": [
-    "https://rawgit.com/valueflows/agent/master/context.jsonld"
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    {
+      "dex": "https://holodex.enspiral.com/api/"
+    }
   ],
-  "@id": "http://dinosaur.is#i",
+  "@id": "dex:people/mikey",
   "@type": "Person",
   "url": "http://dinosaur.is",
   "displayName": "Mikey Williams",
