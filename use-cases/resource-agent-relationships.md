@@ -1,5 +1,10 @@
 # Resource <-> Agent
 
+## definition
+
+* domain: Resource (its instance acts as subject of a Statement)
+* range: Agent (its instance acts as object of a Statement)
+
 ## context
 
 > from [Lynn's comment](https://github.com/valueflows/valueflows/issues/63#issuecomment-148076481):
@@ -9,9 +14,6 @@
 > And, maybe Bob and I see what is happening, maybe we don't, we're not there. So nobody who is interested in vocabulary is actually creating this stuff. Or more accurately, they are interested in vocabulary, but from the perspective of what communicates best in their network situation.
 
 ## examples
-
-* domain: Resource (its instance acts as subject of a Statement)
-* range: Agent (its instance acts as object of a Statement)
 
 ### owner
 This agent owns all rights to this resource.
