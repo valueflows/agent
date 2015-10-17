@@ -1,0 +1,169 @@
+{
+  "@context": [
+    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    {
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "AgentType": "owl:Class",
+      "ResourceType": "owl:Class",
+      "RelationshipType": "rdf:Property",
+      "subTypeOf": "rdfs:subClassOf",
+      "inverseOf": "owl:inverseOf",
+      "label": "skos:prefLabel",
+      "note": "skos:note"
+    },
+    {
+      "@language": "en",
+      "dex": "https://holodex.enspiral.com/api/"
+    }
+  ],
+  "@graph": [{
+    "@id": "dex:agentTypes/individual",
+    "@type": "AgentType",
+    "subTypeOf": "Person",
+    "label": "Individual",
+    "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#individual"
+  }, {
+    "@id": "dex:agentTypes/pod",
+    "@type": "AgentType",
+    "subTypeOf": "Group",
+    "label": "Pod",
+    "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#pod"
+  }, {
+    "@id": "dex:agentTypes/community",
+    "@type": "AgentType",
+    "subTypeOf": "Group",
+    "label": "Community",
+    "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#community"
+  }, {
+    "@id": "dex:agentTypes/network",
+    "@type": "AgentType",
+    "subTypeOf": "Group",
+    "label": "Network",
+    "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#network"
+  }, {
+    "@id": "dex:resourceTypes/company",
+    "@type": "ResourceType",
+    "label": "Company"
+  }, {
+    "@id": "dex:resourceTypes/brand",
+    "@type": "ResourceType",
+    "label": "Brand"
+  }, {
+    "@id": "dex:relationshipTypes/belongs-to",
+    "@type": "RelationshipType",
+    "label": "{subject} belongs to {object}",
+    "inverseOf": {
+      "label": "{subject} includes {object}"
+    }
+  }, {
+    "@id": "dex:relationshipTypes/stewards",
+    "@type": "RelationshipType",
+    "label": "{subject} stewards {object}",
+    "inverseOf": {
+      "label": "{subject} is stewarded by {object}"
+    },
+    "note": "https://github.com/loomio/loomio-org/wiki/stewarding:-accountability-and-support-in-a-workplace-without-bosses"
+  }, {
+    "@id": "dex:relationshipTypes/owns",
+    "@type": "RelationshipType",
+    "label": "{subject} owns {object}",
+    "inverseOf": {
+      "label": "{subject} is owned by {object}"
+    }
+  }, {
+    "@id": "dex:relationshipTypes/maintains",
+    "@type": "RelationshipType",
+    "label": "{subject} maintains {object}",
+    "inverseOf": {
+      "label": "{subject} is maintained by {object}"
+    }
+  }, {
+    "@id": "dex:agents/mikey",
+    "@type": "dex:agentTypes/individual",
+    "label": "Mikey Williams",
+    "url": "http://dinosaur.is",
+    "image": "https://gravatar.com/avatar/22ee24b84d0a2a9446fc9c0fe0652c46"
+  }, {
+    "@id": "dex:agents/simon",
+    "@type": "dex:agentTypes/individual",
+    "label": "Simon Tegg",
+    "image": "https://avatars0.githubusercontent.com/u/1574732?v=2"
+  }, {
+    "@id": "dex:agents/cherubi",
+    "@type": "dex:agentTypes/pod",
+    "label": "Cherubi",
+    "note": "enspiral pod with a focus on mad science and art hacking",
+    "image": "https://avatars2.githubusercontent.com/u/13758529?v=3",
+    "url": "https://github.com/enspiral-cherubi"
+  }, {
+    "@id": "dex:agents/enspiral-services",
+    "@type": "dex:agentTypes/community",
+    "label": "Enspiral Services"
+  }, {
+    "@id": "dex:agents/enspiral",
+    "@type": "dex:agentTypes/network",
+    "label": "Enspiral",
+    "image": "http://i.imgur.com/BFmaOxi.png",
+    "url": "http://enspiral.com"
+  }, {
+    "@id": "dex:resources/enspiral-services-ltd",
+    "@type": "dex:resourceTypes/company",
+    "label": "Enspiral Services Ltd."
+  }, {
+    "@id": "dex:resources/enspiral-craftworks",
+    "@type": "dex:resourceTypes/brand",
+    "url": "http://craftworks.enspiral.com",
+    "label": "Enspiral Craftworks",
+    "image": "http://i.imgur.com/ErXtiQw.png"
+  }, {
+    "@id": "dex:relationships/f5dd0cac-ccbf-461f-b7a6-ce0c29d209be",
+    "@type": "Relationship",
+    "subject": "dex:agents/mikey",
+    "relationship": "dex:relationshipTypes/belongs-to",
+    "object": "dex:agents/cherubi"
+  }, {
+    "@id": "dex:relationships/79e3cc7a-a789-40d2-813a-ef9a184f4c80",
+    "@type": "Relationship",
+    "subject": "dex:agents/simon",
+    "relationship": "dex:relationshipTypes/belongs-to",
+    "object": "dex:agents/cherubi"
+  }, {
+    "@id": "dex:relationships/dee65ce6-2175-4a41-bac6-419be1b7d7da",
+    "@type": "Relationship",
+    "subject": "dex:agents/cherubi",
+    "relationship": "dex:relationshipTypes/belongs-to",
+    "object": "dex:agents/enspiral-services"
+  }, {
+    "@id": "dex:relationships/34e5aae7-9c67-4c4e-a97e-226dd1572e72",
+    "@type": "Relationship",
+    "subject": "dex:agents/enspiral-services",
+    "relationship": "dex:relationshipTypes/belongs-to",
+    "object": "dex:agents/enspiral"
+  }, {
+    "@id": "dex:relationships/3c5dc0ed-5768-48d5-b25a-cf41ab70389d",
+    "@type": "Relationship",
+    "subject": "dex:agents/simon",
+    "relationship": "dex:relationshipTypes/stewards",
+    "object": "dex:agents/mikey",
+    "context": "dex:agents/enspiral-services"
+  }, {
+    "@id": "dex:relationships/9738b8a1-a0c2-4faf-8334-6f726412cba7",
+    "@type": "Relationship",
+    "subject": "dex:agents/enspiral-services",
+    "relationship": "dex:relationshipTypes/owns",
+    "object": "dex:resources/enspiral-services-ltd"
+  }, {
+    "@id": "dex:relationships/c969f9dc-cdee-41ce-8ada-a28478567649",
+    "@type": "Relationship",
+    "subject": "dex:agents/enspiral-services",
+    "relationship": "dex:relationshipTypes/owns",
+    "object": "dex:resources/enspiral-craftworks"
+  }, {
+    "@id": "dex:relationships/3a484ca6-de68-4596-815b-fa236abe9e90",
+    "@type": "Relationship",
+    "subject": "dex:agents/mikey",
+    "relationship": "dex:relationshipTypes/maintains",
+    "object": "dex:resources/enspiral-craftworks",
+    "context": "dex:agents/enspiral-services"
+  }]
+}
