@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    "https://valueflo.ws/ns/index.jsonld",
     {
       "skos": "http://www.w3.org/2004/02/skos/core#",
       "AgentType": "owl:Class",
