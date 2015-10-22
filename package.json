@@ -1,35 +1,13 @@
 {
-  "name": "holodex-vocab",
-  "version": "1.0.0",
-  "description": "semantic vocabulary definitions for holodex.is",
-  "main": "vocab/index.js",
   "scripts": {
-    "test": "standard",
-    "context": "bin/context",
-    "uml": "dot -T svg -o ./assets/uml.svg ./assets/uml.dot"
+    "build": "mkdir -p .build && npm run build-docs && npm run build-ns",
+    "build-docs": "mkdir -p .build/docs && cp README.md .build/docs/agent.md",
+    "build-ns": "mkdir -p .build/ns && cp context.jsonld .build/ns/agent.jsonld",
+    "deploy-remote": "git remote add deploy git@github.com:valueflows/valueflo.ws; true",
+    "deploy-push": "git-directory-deploy --directory .build --repo deploy --branch master --verbose --ignore-removal --username valueflows --email bot@valueflo.ws",
+    "deploy": "npm run build && npm run deploy-remote && npm run deploy-push"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openvocab/holodex.git"
-  },
-  "keywords": [
-    "holodex",
-    "linked",
-    "data",
-    "semantic",
-    "web",
-    "jsonld",
-    "json-schema"
-  ],
-  "author": "openvocab",
-  "license": "AGPLv3",
-  "bugs": {
-    "url": "https://github.com/openvocab/holodex/issues"
-  },
-  "homepage": "https://github.com/openvocab/holodex",
-  "devDependencies": {
-    "schema-jsonld-context": "^2.0.0",
-    "standard": "^5.1.1",
-    "xtend": "^4.0.0"
+  "dependencies": {
+    "git-directory-deploy": "^1.3.0"
   }
 }
