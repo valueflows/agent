@@ -1,0 +1,58 @@
+{
+    "@context": {
+        "inverseOf": "owl:inverseOf",
+        "label": "skos:prefLabel",
+        "labelMap": {
+            "@container": "@language",
+            "@id": "skos:prefLabel"
+        },
+        "nrp": "http://nrp.webfactional.com/accounting/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "vf": "https://w3id.org/valueflows/"
+    },
+    "@graph": [
+        {
+            "@id": "nrp:agent-relationship-type-lod/isAffiliateOf",
+            "@type": "rdf:Property",
+            "inverseOf": {
+                "@id": "nrp:agent-relationship-type-lod/hasAffiliate"
+            },
+            "labelMap": {
+                "en": "is affiliate of"
+            }
+        },
+        {
+            "@id": "nrp:agent-relationship-type-lod/hasAffiliate",
+            "@type": "rdf:Property",
+            "inverseOf": {
+                "@id": "nrp:agent-relationship-type-lod/isAffiliateOf"
+            },
+            "labelMap": {
+                "en": "has affiliate"
+            }
+        },
+        {
+            "@id": "nrp:agent-relationship-type-lod/hasMember",
+            "@type": "rdf:Property",
+            "inverseOf": {
+                "@id": "nrp:agent-relationship-type-lod/isMemberOf"
+            },
+            "labelMap": {
+                "en": "has member"
+            }
+        },
+        {
+            "@id": "nrp:agent-relationship-type-lod/isMemberOf",
+            "@type": "rdf:Property",
+            "inverseOf": {
+                "@id": "nrp:agent-relationship-type-lod/hasMember"
+            },
+            "labelMap": {
+                "en": "is member of"
+            }
+        }
+    ]
+}
