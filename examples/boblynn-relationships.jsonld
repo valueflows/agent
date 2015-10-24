@@ -1,0 +1,85 @@
+{
+    "@context": {
+        "Agent": "vf:Agent",
+        "Group": "vf:Group",
+        "Person": "vf:Person",
+        "Relationship": "vf:Relationship",
+        "inverseOf": "owl:inverseOf",
+        "nrp": "http://nrp.webfactional.com/accounting/",
+        "object": {
+            "@id": "vf:object",
+            "@type": "@id"
+        },
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "relationship": {
+            "@id": "vf:relationship",
+            "@type": "@id"
+        },
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "subject": {
+            "@id": "vf:subject",
+            "@type": "@id"
+        },
+        "vf": "https://w3id.org/valueflows/"
+    },
+    "@graph": [
+        {
+            "@id": "nrp:agent-relationship-lod/2/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/7/",
+            "relationship": "nrp:agent-relationship-type-lod/isMemberOf",
+            "subject": "nrp:agent-lod/6/"
+        },
+        {
+            "@id": "nrp:agent-relationship-lod/3/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/8/",
+            "relationship": "nrp:agent-relationship-type-lod/isAffiliateOf",
+            "subject": "nrp:agent-lod/1/"
+        },
+        {
+            "@id": "nrp:agent-relationship-inv-lod/3/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/1/",
+            "relationship": "nrp:agent-relationship-type-lod/hasAffiliate",
+            "subject": "nrp:agent-lod/8/"
+        },
+        {
+            "@id": "nrp:agent-relationship-lod/4/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/8/",
+            "relationship": "nrp:agent-relationship-type-lod/isAffiliateOf",
+            "subject": "nrp:agent-lod/6/"
+        },
+        {
+            "@id": "nrp:agent-relationship-lod/1/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/7/",
+            "relationship": "nrp:agent-relationship-type-lod/isMemberOf",
+            "subject": "nrp:agent-lod/1/"
+        },
+        {
+            "@id": "nrp:agent-relationship-inv-lod/1/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/1/",
+            "relationship": "nrp:agent-relationship-type-lod/hasMember",
+            "subject": "nrp:agent-lod/7/"
+        },
+        {
+            "@id": "nrp:agent-relationship-inv-lod/2/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/6/",
+            "relationship": "nrp:agent-relationship-type-lod/hasMember",
+            "subject": "nrp:agent-lod/7/"
+        },
+        {
+            "@id": "nrp:agent-relationship-inv-lod/4/",
+            "@type": "Relationship",
+            "object": "nrp:agent-lod/6/",
+            "relationship": "nrp:agent-relationship-type-lod/hasAffiliate",
+            "subject": "nrp:agent-lod/8/"
+        }
+    ]
+}
