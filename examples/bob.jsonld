@@ -1,0 +1,62 @@
+{
+    "@context": {
+        "Agent": "vf:Agent",
+        "Group": "vf:Group",
+        "Person": "vf:Person",
+        "Relationship": "vf:Relationship",
+        "image": {
+            "@id": "vf:image",
+            "@type": "@id"
+        },
+        "inverseOf": "owl:inverseOf",
+        "label": "skos:prefLabel",
+        "labelMap": {
+            "@container": "@language",
+            "@id": "skos:prefLabel"
+        },
+        "note": "skos:note",
+        "noteMap": {
+            "@container": "@language",
+            "@id": "skos:note"
+        },
+        "nrp": "http://nrp.webfactional.com/accounting/",
+        "object": {
+            "@id": "vf:object",
+            "@type": "@id"
+        },
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "relationship": {
+            "@id": "vf:relationship",
+            "@type": "@id"
+        },
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "subject": {
+            "@id": "vf:subject",
+            "@type": "@id"
+        },
+        "url": {
+            "@id": "vf:url",
+            "@type": "@id"
+        },
+        "vf": "https://w3id.org/valueflows/"
+    },
+    "@id": "nrp:agent-lod/1",
+    "@type": "Person",
+    "vf:label": {
+        "@language": "en",
+        "@value": "Bob Haugen"
+    },
+    "nrp:agent-relationship-type-lod/isAffiliateOf": {
+        "@id": "nrp:agent-relationship-lod/3/"
+    },
+    "nrp:agent-relationship-type-lod/isMemberOf": [
+        {
+            "@id": "nrp:agent-relationship-lod/1/"
+        },
+        {
+            "@id": "nrp:agent-relationship-lod/6/"
+        }
+    ]
+}
