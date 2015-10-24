@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "Agent": "vf:Agent",
+        "Group": "vf:Group",
+        "Person": "vf:Person",
+        "label": "skos:prefLabel",
+        "labelMap": {
+            "@container": "@language",
+            "@id": "skos:prefLabel"
+        },
+        "nrp": "http://nrp.webfactional.com/accounting/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "vf": "https://w3id.org/valueflows/"
+    },
+    "@graph": [
+        {
+            "@id": "nrp:agent-type-lod/Network",
+            "@type": "owl:Class",
+            "labelMap": {
+                "en": "Network"
+            },
+            "rdfs:subClassOf": {
+                "@id": "vf:Group"
+            }
+        }
+    ]
+}
