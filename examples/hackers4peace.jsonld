@@ -4,15 +4,78 @@
     "https://rawgit.com/valueflows/agent/master/context.jsonld",
     {
       "role": "https://w3id.org/role/",
-      "h4pid": "https://graph.hackers4peace.net/"
+      "dcterms": "http://purl.org/dc/terms/",
+      "void": "http://rdfs.org/ns/void#",
+      "ianarel": "http://www.iana.org/assignments/relation/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "schema": "http://schema.org",
+      "hydra": "http://www.w3.org/ns/hydra/core#",
+      "ldp": "http://www.w3.org/ns/ldp#",
+      "ianarel:describedby": { "@type": "@id" },
+      "ianarel:describes": { "@type": "@id" },
+      "foaf:primaryTopic": { "@type": "@id" },
+      "dcterms:creator": { "@type": "@id" },
+      "dcterms:publisher": { "@type": "@id" },
+      "dcterms:license": { "@type": "@id" },
+      "void:inDataset": { "@type": "@id" },
+      "idp": "https://idp.hackers4peace.net/",
+      "graph": "https://graph.hackers4peace.net/"
     }
   ],
-  "@id": "h4pid:7e888eed-611c-49c1-a264-fd6fe9182196",
-  "url": "https://hackers4peace.net/",
-  "@type": "Group",
-  "displayName": "hackers4peace",
-  "image": "https://pbs.twimg.com/profile_images/2482021874/c352httwpbi4vl3n42za.png",
-  "role:member": [
-    "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8"
+  "idp:7e888eed-611c-49c1-a264-fd6fe9182196": [
+    {
+      "@id": "idp:7e888eed-611c-49c1-a264-fd6fe9182196",
+      "@type": [ "foaf:Document", "hydra:Resource", "ldp:Resource" ],
+      "ianarel:describes": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id",
+      "foaf:primaryTopic": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id"
+    }, {
+      "@id": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id",
+      "@type": [ "Group", "foaf:Group", "schema:Organization" ],
+      "url": "https://hackers4peace.net/",
+      "foaf:homepage": "https://hackers4peace.net/",
+      "displayName": "hackers4peace",
+      "image": "https://pbs.twimg.com/profile_images/2482021874/c352httwpbi4vl3n42za.png",
+      "ianarel:describedby": [
+        "idp:7e888eed-611c-49c1-a264-fd6fe9182196",
+        "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd/207675ae-fef2-4637-90cc-9378628a4d10"
+      ],
+      "@reverse": {
+        "foaf:primaryTopic": [
+          "idp:7e888eed-611c-49c1-a264-fd6fe9182196",
+          "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd/207675ae-fef2-4637-90cc-9378628a4d10"
+        ]
+      }
+    }
+  ],
+  "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd": [
+    {
+      "@id": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd",
+      "@type": [ "foaf:Document", "void:DatasetDescription", "hydra:Resource", "ldp:Resource" ],
+      "ianarel:describes": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd#id",
+      "foaf:primaryTopic": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd#id",
+      "dcterms:creator": "https://idp.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8#id"
+    }, {
+      "@id": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd/#id",
+      "@type": [ "void:Dataset" ],
+      "ianarel:describedby": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd",
+      "void:uriSpace": "https://graph.hackers4peace.net/cb28288f-6c43-46ae-8f7e-f6c86f64b7cd/",
+      "dcterms:publisher": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id",
+      "dcterms:license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd/207675ae-fef2-4637-90cc-9378628a4d10": [
+    {
+      "@id": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd/207675ae-fef2-4637-90cc-9378628a4d10",
+      "@type": [ "foaf:Document", "hydra:Resource", "ldp:Resource" ],
+      "void:inDataset": "graph:cb28288f-6c43-46ae-8f7e-f6c86f64b7cd#id",
+      "ianarel:describes": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id",
+      "foaf:primaryTopic": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id",
+      "dcterms:creator": "https://idp.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8#id"
+    }, {
+      "@id": "idp:7e888eed-611c-49c1-a264-fd6fe9182196#id",
+      "role:member": [
+        "https://graph.wwelves.org/ef093385-8906-4c78-9a69-9217c76013a8#id"
+      ]
+    }
   ]
 }

@@ -4,18 +4,81 @@
     "https://rawgit.com/valueflows/agent/master/context.jsonld",
     {
       "role": "https://w3id.org/role/",
-      "weid": "https://graph.wwelves.org/",
-      "weurl": "https://wwelves.org/"
+      "dcterms": "http://purl.org/dc/terms/",
+      "void": "http://rdfs.org/ns/void#",
+      "ianarel": "http://www.iana.org/assignments/relation/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "schema": "http://schema.org",
+      "hydra": "http://www.w3.org/ns/hydra/core#",
+      "ldp": "http://www.w3.org/ns/ldp#",
+      "ianarel:describedby": { "@type": "@id" },
+      "ianarel:describes": { "@type": "@id" },
+      "foaf:primaryTopic": { "@type": "@id" },
+      "dcterms:creator": { "@type": "@id" },
+      "dcterms:publisher": { "@type": "@id" },
+      "dcterms:license": { "@type": "@id" },
+      "void:inDataset": { "@type": "@id" },
+      "idp": "https://idp.wwelves.org/",
+      "graph": "https://graph.wwelves.org/"
     }
   ],
-  "@id": "weid:ef093385-8906-4c78-9a69-9217c76013a8",
-  "url": "weurl:perpetual-tripper",
-  "@type": "Person",
-  "displayName": "elf Pavlik",
-  "image": "https://wwelves.org/images/elf-pavlik.jpg",
-  "@reverse": {
-    "role:member": [
-      "https://graph.hackers4peace.net/7e888eed-611c-49c1-a264-fd6fe9182196"
-    ]
-  }
+  "idp:ef093385-8906-4c78-9a69-9217c76013a8": [
+    {
+      "@id": "idp:ef093385-8906-4c78-9a69-9217c76013a8",
+      "@type": [ "foaf:Document", "foaf:PersonalProfileDocument", "hydra:Resource", "ldp:Resource" ],
+      "ianarel:describes": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "foaf:primaryTopic": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id"
+    }, {
+      "@id": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "@type": [ "Person", "foaf:Person", "schema:Person" ],
+      "url": "https://wwelves.org/perpetual-tripper",
+      "foaf:homepage": "https://wwelves.org/perpetual-tripper",
+      "displayName": "elf Pavlik",
+      "image": "https://wwelves.org/images/elf-pavlik.jpg",
+      "ianarel:describedby": [
+        "idp:ef093385-8906-4c78-9a69-9217c76013a8",
+        "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e/d9197b39-0eac-416a-9280-9ee4b022238d"
+      ],
+      "@reverse": {
+        "foaf:primaryTopic": [
+          "idp:ef093385-8906-4c78-9a69-9217c76013a8",
+          "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e/d9197b39-0eac-416a-9280-9ee4b022238d"
+        ]
+      }
+    }
+  ],
+  "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e": [
+    {
+      "@id": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e",
+      "@type": [ "foaf:Document", "void:DatasetDescription", "hydra:Resource", "ldp:Resource" ],
+      "ianarel:describes": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e#id",
+      "foaf:primaryTopic": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e#id",
+      "dcterms:creator": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id"
+    }, {
+      "@id": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e#id",
+      "@type": [ "void:Dataset" ],
+      "ianarel:describedby": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e",
+      "void:uriSpace": "https://graph.wwelves.org/5dfe2aff-37cd-4463-8bab-0bba46cb160e/",
+      "dcterms:creator": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "dcterms:publisher": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "dcterms:license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e/d9197b39-0eac-416a-9280-9ee4b022238d": [
+    {
+      "@id": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e/d9197b39-0eac-416a-9280-9ee4b022238d",
+      "@type": [ "foaf:Document", "foaf:PersonalProfileDocument", "hydra:Resource", "ldp:Resource" ],
+      "void:inDataset": "graph:5dfe2aff-37cd-4463-8bab-0bba46cb160e#id",
+      "ianarel:describes": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "foaf:primaryTopic": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "dcterms:creator": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id"
+    }, {
+      "@id": "idp:ef093385-8906-4c78-9a69-9217c76013a8#id",
+      "@reverse": {
+        "role:member": [
+          "https://idp.hackers4peace.net/7e888eed-611c-49c1-a264-fd6fe9182196#id"
+        ]
+      }
+    }
+  ]
 }
