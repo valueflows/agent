@@ -3,13 +3,10 @@
     "https://valueflo.ws/ns/index.jsonld",
     {
       "skos": "http://www.w3.org/2004/02/skos/core#",
-      "AgentType": "owl:Class",
-      "ResourceType": "owl:Class",
-      "RelationshipType": "rdf:Property",
-      "subTypeOf": "rdfs:subClassOf",
-      "inverseOf": "owl:inverseOf",
-      "label": "skos:prefLabel",
-      "note": "skos:note"
+      "Type": "owl:Class",
+      "Property": "rdf:Property",
+      "subTypeOf": { "@id": "rdfs:subClassOf", "@type": "@id" },
+      "inverseOf": { "@id": "owl:inverseOf", "@type": "@id" }
     },
     {
       "@language": "en",
@@ -18,46 +15,46 @@
   ],
   "@graph": [{
     "@id": "dex:agentTypes/individual",
-    "@type": "AgentType",
-    "subTypeOf": "Person",
+    "@type": "Type",
+    "subTypeOf": "vf:Person",
     "label": "Individual",
     "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#individual"
   }, {
     "@id": "dex:agentTypes/pod",
-    "@type": "AgentType",
-    "subTypeOf": "Group",
+    "@type": "Type",
+    "subTypeOf": "vf:Group",
     "label": "Pod",
     "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#pod"
   }, {
     "@id": "dex:agentTypes/community",
-    "@type": "AgentType",
-    "subTypeOf": "Group",
+    "@type": "Type",
+    "subTypeOf": "vf:Group",
     "label": "Community",
     "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#community"
   }, {
     "@id": "dex:agentTypes/network",
-    "@type": "AgentType",
-    "subTypeOf": "Group",
+    "@type": "Type",
+    "subTypeOf": "vf:Group",
     "label": "Network",
     "note": "https://enspiral.gitbooks.io/os/content/en/levels_of_organising.html#network"
   }, {
     "@id": "dex:resourceTypes/company",
-    "@type": "ResourceType",
+    "@type": "Type",
     "label": "Company"
   }, {
     "@id": "dex:resourceTypes/brand",
-    "@type": "ResourceType",
+    "@type": "Type",
     "label": "Brand"
   }, {
     "@id": "dex:relationshipTypes/belongs-to",
-    "@type": "RelationshipType",
+    "@type": "Property",
     "label": "{subject} belongs to {object}",
     "inverseOf": {
       "label": "{subject} includes {object}"
     }
   }, {
     "@id": "dex:relationshipTypes/stewards",
-    "@type": "RelationshipType",
+    "@type": "Property",
     "label": "{subject} stewards {object}",
     "inverseOf": {
       "label": "{subject} is stewarded by {object}"
@@ -65,14 +62,14 @@
     "note": "https://github.com/loomio/loomio-org/wiki/stewarding:-accountability-and-support-in-a-workplace-without-bosses"
   }, {
     "@id": "dex:relationshipTypes/owns",
-    "@type": "RelationshipType",
+    "@type": "Property",
     "label": "{subject} owns {object}",
     "inverseOf": {
       "label": "{subject} is owned by {object}"
     }
   }, {
     "@id": "dex:relationshipTypes/maintains",
-    "@type": "RelationshipType",
+    "@type": "Property",
     "label": "{subject} maintains {object}",
     "inverseOf": {
       "label": "{subject} is maintained by {object}"
