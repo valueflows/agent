@@ -38,7 +38,6 @@ vf:Group owl:equivalentClass foaf:Group
 ```
 ex:Network rdfs:subClassOf vf:Group
 ```
-```
 
 ### Relationship Type
 
