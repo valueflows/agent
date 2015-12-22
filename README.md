@@ -26,7 +26,7 @@ People could also use other already defined subclasses as desired, for example o
 
 #### Structural definition
 
-'''
+```
 vf:Agent rdf:type owl:Class
 vf:Person rdfs:subClassOf vf:Agent
 vf:Group rdfs:subClassOf vf:Agent
@@ -34,10 +34,11 @@ vf:Agent owl:equivalentClass foaf:Agent
 vf:Person owl:equivalentClass foaf:Person
 vf:Person owl:equivalentClass schema:Person
 vf:Group owl:equivalentClass foaf:Group
-'''
-'''
+```
+```
 ex:Network rdfs:subClassOf vf:Group
-'''
+```
+```
 
 ### Relationship Type
 
@@ -67,20 +68,20 @@ These properties are grouped with the rdf:Property that names the relationship t
 
 #### RDF Structural definition
 
-'''
+```
 vf:memberOf rdf:type rdf:Property
 vf:hasMember rdf:type rdf:Property
 vf:memberOf owl:inverseOf vf:hasMember
 vf:memberOf skos:prefLabel "is member of"
 vf:hasMember owl:inverseOf vf:memberOf
 vf:hasMember skos:prefLabel "has member"
-'''
-'''
+```
+```
 ex:affiliateOf rdfs:subPropertyOf vf:memberOf
 ex:hasAffiliate rdfs:subPropertyOf vf:hasMember
 ex:harvesterFor rdfs:subPropertyOf vf:memberOf
 ex:hasHarvester rdfs:subPropertyOf vf:hasMember
-'''
+```
 
 #### Examples
 
