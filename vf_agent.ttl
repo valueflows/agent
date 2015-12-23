@@ -1,0 +1,30 @@
+@prefix owl: "http://www.w3.org/2002/07/owl#" .
+@prefix rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+@prefix rdfs: "http://www.w3.org/2000/01/rdf-schema#" .
+@prefix skos: "http://www.w3.org/2004/02/skos/core#" .
+@prefix vf: "https://w3id.org/valueflows/" .
+
+
+# Classes
+
+
+vf:Agent
+  a owl:Class ;
+  rdfs:label "Agent" ;
+  rdfs:comment "" ;
+  owl:equivalentClass foaf:Agent .
+
+vf:Person
+  a owl:Class ;
+  rdfs:label "Person" ;
+  rdfs:comment "" ;
+  rdfs:subClassOf vf:Agent ;
+  owl:equivalentClass foaf:Person, schema:Person .
+
+vf:Group
+  a owl:Class ;
+  rdfs:label "Group" ;
+  rdfs:comment "" ;
+  rdfs:subClassOf vf:Agent ;
+  owl:equivalentClass foaf:Group .
+
