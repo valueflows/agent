@@ -30,3 +30,35 @@ vf:Group
   rdfs:subClassOf vf:Agent ;
   owl:equivalentClass foaf:Group .
 
+
+
+# Properties
+
+vf:displayName
+  a owl:DatatypeProperty ;
+  rdfs:label "Display name" ;
+  rdfs:domain vf:Agent ;
+  rdfs:range rdfs:Literal .
+
+vf:memberOf
+  a rdf:Property ;
+  skos:prefLabel "is member of" ;
+  rdfs:domain vf:Agent ;
+  owl:inverseOf vf:hasMember .
+
+vf:hasMember
+  a rdf:Property ;
+  skos:prefLabel "has member" ;
+  rdfs:domain vf:Agent ;
+  owl:inverseOf vf:memberOf .
+
+vf:affiliateOf
+  a rdf:Property ;
+  rdfs:domain vf:Agent ;
+  rdfs:subPropertyOf vf:memberOf .
+
+vf:hasAffiliate
+  a rdf:Property ;
+  rdfs:domain vf:Agent ;
+  rdfs:subPropertyOf vf:hasMember .
+
