@@ -64,8 +64,9 @@ These properties are grouped with the rdf:Property that names the relationship t
 
 * label (skos:prefLabel)
 * inverseOf (owl:inverseOf)
+* note (skos:note)
 
-#### RDF Structural definition
+#### Structural definition
 
 ```
 vf:memberOf rdf:type rdf:Property
@@ -97,11 +98,12 @@ An Agent is an entity that has agency in the social or economic realm.  This cou
 * @id ([JSON-LD](http://www.w3.org/TR/json-ld/) specific way of setting [rdf:subject](http://www.w3.org/TR/rdf-schema/#ch_subject))
 * @type ([JSON-LD](http://www.w3.org/TR/json-ld/) specific alias of [rdf:type](http://www.w3.org/TR/rdf-schema/#ch_type))
 * url (a URL)
-* displayName (skos:prefLabel)
+* label (skos:prefLabel)
 * image (a URL)
+* note (skos:note)
 * (will probably be others)
 
-#### RDF Structural definition
+#### Structural definition
 
 
 #### Examples
@@ -135,7 +137,7 @@ For example, Jane is a mentor of John in the context of the group Enspiral.
 
 Commonly used, recommended or defined by this vocabulary. Everyone can use any other properties from any other vocab unless they explicitly restrict their use.
 
-#### RDF Structural definition
+#### Structural definition
 
 
 
