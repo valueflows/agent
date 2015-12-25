@@ -5,6 +5,9 @@ Vocabulary to describe networks of people and groups.
 ## Vocabulary
 
 ![agentpic-ttl](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent-ttl.png)
+
+[^Interactive diagram in WebVOWL](http://vowl.visualdataweb.org/webvowl/index.html#iri=https://raw.githubusercontent.com/valueflows/agent/master/vf_agent.ttl)
+
 ![agentpic-uml](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent.png)
 
 Notes: 
