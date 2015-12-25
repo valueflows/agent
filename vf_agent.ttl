@@ -30,35 +30,68 @@ vf:Group
   rdfs:subClassOf vf:Agent ;
   owl:equivalentClass foaf:Group .
 
+vf:Relationship
+  a owl:Class ;
+  rdfs:label "Relationship" ;
+  rdfs:comment "" .
 
 
 # Properties
 
-vf:displayName
+vf:name
+  a skos:prefLabel ;
+  rdfs:label "name" ;
+  rdfs:range skos:prefLabel ;
+  rdfs:domain vf:Agent, vf:Relationship .
+
+vf:url
   a owl:DatatypeProperty ;
-  rdfs:label "Display name" ;
-  rdfs:domain vf:Agent ;
-  rdfs:range rdfs:Literal .
+  rdfs:label "url" ;
+  rdfs:domain vf:Agent .
+
+vf:image
+  a owl:DatatypeProperty ;
+  rdfs:label "image" ;
+  rdfs:domain vf:Agent .  
+
+vf:subject
+  a owl:ObjectProperty ;
+  rdfs:label "subject" ;
+  rdfs:domain vf:Relationship;
+  rdfs:range vf:Agent .
+
+vf:relationship
+  a rdf:Property ;
+  rdfs:label "relationship" ;
+  rdfs:domain vf:Relationship ;
+  rdfs:range rdf:Property .
+
+vf:object
+  a owl:ObjectProperty ;
+  rdfs:label "object" ;
+  rdfs:domain vf:Relationship;
+  rdfs:range vf:Agent .
+
+vf:context
+  a owl:ObjectProperty ;
+  rdfs:label "context" ;
+  rdfs:domain vf:Relationship ;
+  rdfs:range vf:Agent .
+  
+vf:note
+  a owl:DatatypeProperty ;
+  rdfs:label "note" ;
+  rdfs:domain vf:Agent, vf:Relationship .
 
 vf:memberOf
   a rdf:Property ;
   skos:prefLabel "is member of" ;
-  rdfs:domain vf:Agent ;
-  owl:inverseOf vf:hasMember .
+  owl:inverseOf vf:hasMember ;
+  rdfs:range rdf:Property .
 
 vf:hasMember
   a rdf:Property ;
   skos:prefLabel "has member" ;
-  rdfs:domain vf:Agent ;
-  owl:inverseOf vf:memberOf .
-
-vf:affiliateOf
-  a rdf:Property ;
-  rdfs:domain vf:Agent ;
-  rdfs:subPropertyOf vf:memberOf .
-
-vf:hasAffiliate
-  a rdf:Property ;
-  rdfs:domain vf:Agent ;
-  rdfs:subPropertyOf vf:hasMember .
+  owl:inverseOf vf:memberOf ;
+  rdfs:range rdf:Property .
 
