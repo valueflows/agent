@@ -4,7 +4,8 @@ Vocabulary to describe networks of people and groups.
 
 ## Vocabulary
 
-![agentpic](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent.png)
+![agentpic-ttl](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent-ttl.png)
+![agentpic-uml](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent.png)
 
 Notes: 
 * The Agent core model is fairly stable, but the vocabulary itself is not yet stable, 
