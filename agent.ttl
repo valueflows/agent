@@ -12,86 +12,67 @@
 
 vf:Agent
   a owl:Class ;
-  rdfs:label "Agent" ;
+  rdfs:label "vf:Agent" ;
   rdfs:comment "" ;
   owl:equivalentClass foaf:Agent .
 
 vf:Person
   a owl:Class ;
-  rdfs:label "Person" ;
+  rdfs:label "vf:Person" ;
   rdfs:comment "" ;
   rdfs:subClassOf vf:Agent ;
   owl:equivalentClass foaf:Person, schema:Person .
 
 vf:Group
   a owl:Class ;
-  rdfs:label "Group" ;
+  rdfs:label "vf:Group" ;
   rdfs:comment "" ;
   rdfs:subClassOf vf:Agent ;
   owl:equivalentClass foaf:Group .
 
 vf:Relationship
   a owl:Class ;
-  rdfs:label "Relationship" ;
+  rdfs:label "vf:Relationship" ;
   rdfs:comment "" .
 
 
 # Properties
 
-vf:name
-  a skos:prefLabel ;
-  rdfs:label "name" ;
-  rdfs:range skos:prefLabel ;
-  rdfs:domain vf:Agent, vf:Relationship .
-
-vf:url
-  a owl:DatatypeProperty ;
-  rdfs:label "url" ;
-  rdfs:domain vf:Agent .
-
-vf:image
-  a owl:DatatypeProperty ;
-  rdfs:label "image" ;
-  rdfs:domain vf:Agent .  
-
 vf:subject
   a owl:ObjectProperty ;
-  rdfs:label "subject" ;
+  rdfs:label "vf:subject" ;
   rdfs:domain vf:Relationship;
   rdfs:range vf:Agent .
 
 vf:relationship
   a rdf:Property ;
-  rdfs:label "relationship" ;
+  rdfs:label "vf:relationship" ;
   rdfs:domain vf:Relationship ;
   rdfs:range rdf:Property .
 
 vf:object
   a owl:ObjectProperty ;
-  rdfs:label "object" ;
+  rdfs:label "vf:object" ;
   rdfs:domain vf:Relationship;
   rdfs:range vf:Agent .
 
 vf:context
   a owl:ObjectProperty ;
-  rdfs:label "context" ;
+  rdfs:label "vf:context" ;
   rdfs:domain vf:Relationship ;
   rdfs:range vf:Agent .
-  
-vf:note
-  a owl:DatatypeProperty ;
-  rdfs:label "note" ;
-  rdfs:domain vf:Agent, vf:Relationship .
 
 vf:memberOf
   a rdf:Property ;
-  skos:prefLabel "is member of" ;
+  skos:prefLabel "vf:memberOf" ;
   owl:inverseOf vf:hasMember ;
-  rdfs:range rdf:Property .
+  rdfs:domain vf:Person ;
+  rdfs:range vf:Group .
 
 vf:hasMember
   a rdf:Property ;
-  skos:prefLabel "has member" ;
+  skos:prefLabel "vf:hasMember" ;
   owl:inverseOf vf:memberOf ;
-  rdfs:range rdf:Property .
-
+  rdfs:domain vf:Group ;
+  rdfs:range vf:Person .
+  

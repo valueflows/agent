@@ -4,17 +4,17 @@ Vocabulary to describe networks of people and groups.
 
 ## Vocabulary
 
-![agentpic-ttl](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent-ttl.png)
+![agentpic-ttl](https://raw.githubusercontent.com/valueflows/agent/master/images/agent-vowl.png)
 
-[^Interactive diagram in WebVOWL](http://vowl.visualdataweb.org/webvowl/index.html#iri=https://raw.githubusercontent.com/valueflows/agent/master/vf_agent.ttl)
+[^Interactive diagram in WebVOWL](http://vowl.visualdataweb.org/webvowl/index.html#iri=https://raw.githubusercontent.com/valueflows/agent/master/agent.ttl)
 
-![agentpic-uml](https://raw.githubusercontent.com/valueflows/agent/master/assets/agent.png)
+![agentpic-uml](https://raw.githubusercontent.com/valueflows/agent/master/images/agent-uml.png)
 
-Notes: 
-* The Agent core model is fairly stable, but the vocabulary itself is not yet stable, 
-and is in research testing with various applications. We are happy to collaborate with any developers 
-wanting to start to use the vf:Agent vocabulary. This will give developers a chance to both influence and 
-help to stabilize the vocabulary. 
+Notes:
+* The Agent core model is fairly stable, but the vocabulary itself is not yet stable,
+and is in research testing with various applications. We are happy to collaborate with any developers
+wanting to start to use the vf:Agent vocabulary. This will give developers a chance to both influence and
+help to stabilize the vocabulary.
 * Many of the terms will in the future be drawn from an existing vocabulary.
 * All examples open in [JSON-LD Playground](http://json-ld.org/playground)
 and use context and example files from master branch of this repository.
@@ -23,9 +23,9 @@ and use context and example files from master branch of this repository.
 
 #### Definition and Notes
 
-We are using a class hierarchy of Agent to represent agent types: Agent, Person, Group. 
-We will use existing vocabularies for the top levels, or document equivalence in existing vocabularies. 
-We suggest that people add other types of agents as subclasses of this hierarchy if others are useful. 
+We are using a class hierarchy of Agent to represent agent types: Agent, Person, Group.
+We will use existing vocabularies for the top levels, or document equivalence in existing vocabularies.
+We suggest that people add other types of agents as subclasses of this hierarchy if others are useful.
 People could also use other already defined subclasses as desired, for example org:Organization.
 
 #### Structural definition
@@ -47,19 +47,19 @@ ex:Network rdfs:subClassOf vf:Group
 
 #### Definition and Notes
 
-A relationship type is a generic defined relationship that can be had between 2 Agents (or subclasses of). 
-Although it usually is, the relationship of a particular type does not have to be agreed to from both sides, for example "follow". 
-A relationship type can be a direct relationship, like "steward" or "like", or more like a role. 
-Role types of relationships are often used for a person's role in an organization or group, 
+A relationship type is a generic defined relationship that can be had between 2 Agents (or subclasses of).
+Although it usually is, the relationship of a particular type does not have to be agreed to from both sides, for example "follow".
+A relationship type can be a direct relationship, like "steward" or "like", or more like a role.
+Role types of relationships are often used for a person's role in an organization or group,
 for example "grower" or "harvester" for a food network.
 
-The relationship type is implemented as a rdf:Property. 
-There are a number of useful Properties in existing vocabularies that can be used. 
+The relationship type is implemented as a rdf:Property.
+There are a number of useful Properties in existing vocabularies that can be used.
 Or people can create their own as needed.  We will supply a handful of types of relationships that can be subPropertied,
 and therefore imply some defined behavior. (The specifics are still under discussion, but the following is a start.)
 
-Membership: Membership implies one Agent belonging to or being affiliated with another Agent. 
-Any type of Agent can be memberOf a group or other non-person Agent. 
+Membership: Membership implies one Agent belonging to or being affiliated with another Agent.
+Any type of Agent can be memberOf a group or other non-person Agent.
 This agent can be memberOf any number of non-person agents, no exclusivity is implied.
 
 #### Properties
@@ -128,8 +128,8 @@ An Agent is an entity that has agency in the social or economic realm.  This cou
 
 #### Definition and Notes
 
-A Relationship in this vocabulary denotes a relationship between 2 Agents of any type. 
-The relationship can be in the context of an Agent that would not be a Person. 
+A Relationship in this vocabulary denotes a relationship between 2 Agents of any type.
+The relationship can be in the context of an Agent that would not be a Person.
 For example, Jane is a mentor of John in the context of the group Enspiral.
 
 #### Properties
