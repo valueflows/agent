@@ -62,17 +62,4 @@ vf:context
   rdfs:domain vf:Relationship ;
   rdfs:range vf:Agent .
 
-vf:memberOf
-  a rdf:Property ;
-  skos:prefLabel "vf:memberOf" ;
-  owl:inverseOf vf:hasMember ;
-  rdfs:domain vf:Person ;
-  rdfs:range vf:Group .
-
-vf:hasMember
-  a rdf:Property ;
-  skos:prefLabel "vf:hasMember" ;
-  owl:inverseOf vf:memberOf ;
-  rdfs:domain vf:Group ;
-  rdfs:range vf:Person .
   
