@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://w3id.org/role/",
-    "https://rawgit.com/valueflows/agent/master/context.jsonld",
+    "https://cdn.jsdelivr.net/gh/valueflows/agent@master/context.jsonld",
     {
       "role": "https://w3id.org/role/",
       "dcterms": "http://purl.org/dc/terms/",

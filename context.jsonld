@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://rawgit.com/valueflows/valueflows/master/context.jsonld",
+    "https://cdn.jsdelivr.net/gh/valueflows/valueflows@master/context.jsonld",
     {
       "Agent": "vf:Agent",
       "Person": "vf:Person",
