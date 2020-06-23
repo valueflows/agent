@@ -1,4 +1,4 @@
 # vf:Agent
 
-This is a subset of the ValueFlows vocabulary, current doc here: https://www.valueflo.ws/
+agent has moved to https://lab.allmende.io/valueflows/agent
 
